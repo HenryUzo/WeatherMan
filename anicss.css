@@ -1,0 +1,513 @@
+html{
+    background: #0d1429;   
+    animation: color 60s linear 50s infinite;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+ }
+
+@keyframes color{
+    0%{
+        background: #0d1429; 
+    }
+
+
+    25%, 50%, 75%{
+        background: #86cbeb; 
+    }
+
+    100%{
+        
+        background: #0d1429; 
+    }
+}
+
+.ist{
+    position: absolute;
+    top: 10%;
+    left:10%;
+    transform: translate(-50%,-50%)
+}
+
+.cloud1{
+    position: relative;
+    width: 200px;
+    height:75px;
+    border-radius: 50px;
+    background: #fff;
+    animation: slide 8s linear infinite;
+}
+.cloud1:before{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 10%;
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius:50%;
+}
+.cloud1:after{
+    content: '';
+    position: absolute;
+    top: -80%;
+    right: 15%;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+@keyframes slide
+{
+    0%
+    {
+        transform: translate(0)
+    }
+    50%
+    {
+        transform: translate(100px)
+    }
+    0%
+    {
+        transform: translate(0)
+    }
+}
+
+.snd{
+    position: absolute;
+    top: 15%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+
+
+.cloud2{
+    position: relative;
+    width: 300px;
+    height:100px;
+    border-radius: 50px;
+    background: #fff;
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, .5);*/
+    animation: move1 14s linear infinite;
+}
+.cloud2:before{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 10%;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+.cloud2:after{
+    content: '';
+    position: absolute;
+    top: -90%;
+    right: 5%;
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+}
+
+@keyframes move1
+{
+    0%
+    {
+        transform: translate(0)
+    }
+    50%
+    {
+        transform: translate(-150px)
+    }
+    0%
+    {
+        transform: translate(0)
+    }
+}
+
+
+
+.trd{
+    position: absolute;
+    top: 10%;
+    right:10%;
+    transform: translate(-50%,-50%)
+}
+
+.cloud3{
+    position: relative;
+    width: 200px;
+    height:75px;
+    border-radius: 50px;
+    background: #fff;
+    animation: slide 10s linear infinite;
+}
+.cloud3:before{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 10%;
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius:50%;
+}
+.cloud3:after{
+    content: '';
+    position: absolute;
+    top: -80%;
+    right: 15%;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+@keyframes move
+{
+    0%
+    {
+        transform: translate(0)
+    }
+    50%
+    {
+        transform: translate(100px)
+    }
+    0%
+    {
+        transform: translate(0)
+    }
+}
+
+.field1{
+        position: absolute;
+        bottom: -280%;
+        left:15%;
+        transform: translate(-50%,-50%)
+    }
+.field1 .one{
+        position: relative;
+        width: 2000px;
+        height:2000px;
+        border-radius: 50%;
+        background: rgb(16, 145, 26);
+        /*box-shadow: 0 0 15px rgba(0, 0, 0, .5);*/
+        }
+.field2{
+            position: absolute;
+            bottom: -280%;
+            left:85%;
+            transform: translate(-50%,-50%)
+        }
+
+.field2 .one{
+        position: relative;
+        width: 2000px;
+        height:2000px;
+        border-radius: 50%;
+        background: rgb(21, 134, 30);
+        /*box-shadow: 0 0 15px rgba(0, 0, 0, .5);*/
+        }
+
+.tree1{
+    position: absolute;
+        bottom: -13%;
+        left:25%;
+        transform: translate(-50%,-50%)
+        }
+.tree1 .img{
+    position: relative;
+
+}
+
+.field3{
+        position: absolute;
+        bottom: -270%;
+        left:50%;
+        transform: translate(-50%,-50%)
+        }
+.field3 .one{
+        position: relative;
+        width: 2000px;
+        height:2000px;
+        border-radius: 50%;
+        background: rgb(17, 175, 30);
+        /*box-shadow: 0 0 15px rgba(0, 0, 0, .5);*/
+            }
+
+
+.img{
+    position: absolute;
+    top:60%;
+    left:50%
+}
+
+#cf {
+    position:relative;
+
+}
+
+#cf img {
+    position:absolute;
+    left:0;
+}
+
+.logo{
+    position: absolute;
+    top: 10%;
+    left:60%;
+    transform: translate(-50%,-50%)
+}
+
+.moon{
+    position: absolute;
+    top: 90%;
+    left:10%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #eeeded;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.719);
+    z-index: -1;
+    animation: movealong 60s ease-in-out -60s infinite;
+}
+
+@keyframes movealong {
+    0%{
+        top: 80%;
+        left:90%;
+        transform: rotate(0deg);
+    }
+
+    10%{
+        top: 50%;
+        left:80%;
+        
+    }
+
+    20%{
+        top: 30%;
+        left:70%;
+    }
+
+    30%{
+        top: 10%;
+        left:60%;
+    }
+
+    40%{
+        top: 5%;
+        left:50%;
+    }
+
+    50%{
+        top: 5%;
+        left:40%;
+        transform: rotate(180deg);
+    }
+
+    60%{
+        top: 10%;
+        left:30%;
+    }
+
+    70%{
+        top: 30%;
+        left:10%;
+    }
+
+    80%{
+        top: 50%;
+        left:0%;
+    }
+
+    90%{
+        top: 80%;
+        left:-10%;
+    }
+
+    100%{
+       top: 90%;
+       left:-20%;
+       transform: rotate(360deg);
+    }
+}
+
+.sun{
+    position: absolute;
+    top: 100%;
+    left:90%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #ffe208;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+    z-index: -1;
+    animation: move 60s ease-in-out 50s infinite;
+   
+}
+
+.sun li{
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 3px;
+    background: #ffe208;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+    z-index: -1;
+}
+
+.sun li:nth-child(1){
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.sun li:nth-child(2){
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.sun li:nth-child(3){
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sun li:nth-child(4){
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.sun li:nth-child(5){
+    transform: translate(-50%, -50%) rotate(22.5deg);
+}
+
+.sun li:nth-child(6){
+    transform: translate(-50%, -50%) rotate(-22.5deg);
+}
+
+.sun li:nth-child(7){
+    transform: translate(-50%, -50%) rotate(67.5deg);
+}
+
+.sun li:nth-child(8){
+    transform: translate(-50%, -50%) rotate(-67.5deg);
+}
+
+
+
+@keyframes move {
+    0%{
+        top: 100%;
+        left:90%;
+        transform: rotate(0deg);
+    }
+
+    10%{
+        top: 50%;
+        left:80%;
+        
+    }
+
+    20%{
+        top: 30%;
+        left:70%;
+    }
+
+    30%{
+        top: 10%;
+        left:60%;
+    }
+
+    40%{
+        top: 5%;
+        left:50%;
+    }
+
+    50%{
+        top: 5%;
+        left:40%;
+        transform: rotate(180deg);
+    }
+
+    60%{
+        top: 10%;
+        left:30%;
+    }
+
+    70%{
+        top: 30%;
+        left:10%;
+    }
+
+    80%{
+        top: 50%;
+        left:0%;
+    }
+
+    90%{
+        top: 80%;
+        left:-10%;
+    }
+
+    100%{
+       top: 90%;
+       left:-20%;
+       transform: rotate(360deg);
+    }
+}
+  
+.countdown{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+
+.countdown p{
+    font-size: 8vw;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    animation: swap 60s ease-in-out 50s infinite;
+    color: white;
+}
+
+.countdown sup{
+    font-size: 4vw;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    padding-top: 200%;
+    animation: swap 60s ease-in-out 50s infinite;
+    color: white;
+}
+
+.state{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+
+.state p{
+    font-size: 1.5vw;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    animation: swap 60s ease-in-out 50s infinite;
+    color: white;
+}
+  
+@keyframes swap{
+    0%, 90%{
+        color: #000000;
+    }
+    100%{
+        
+        
+        color: #fff;
+    }
+}
+                
+
